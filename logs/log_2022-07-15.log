@@ -1,0 +1,184 @@
+2022-07-15T08:29:28.580+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T08:29:28.622+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T08:30:35.648+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T08:30:35.696+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T08:31:17.883+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T08:31:17.928+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T08:38:52.880+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T08:38:52.912+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T08:41:42.066+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T08:41:42.100+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T08:56:23.602+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T08:56:23.618+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T08:58:30.335+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T08:58:30.375+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T11:36:19.967+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T11:36:20.017+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T11:41:09.148+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T11:41:09.184+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T11:42:46.847+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T11:42:46.891+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T13:07:59.548+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T13:07:59.590+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T13:14:01.720+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T13:14:01.758+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T13:14:01.758+0800	INFO	APIResponse/response.go:40	msg	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T13:14:05.825+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T13:14:05.862+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T13:14:05.862+0800	INFO	APIResponse/response.go:40	msg	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T13:19:36.484+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:22:34.136+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:23:11.317+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T13:23:11.356+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T13:23:21.838+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:24:39.690+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T13:24:39.733+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T13:24:45.495+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:25:25.900+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:25:31.003+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:31:27.927+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T13:31:27.967+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T13:31:35.474+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:33:07.706+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T13:33:07.750+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T13:33:13.645+0800	INFO	Service/service.go:703	WeighMultiConditionSearch	{"调用 Service": "WeighMultiConditionSearch 处理请求"}
+2022-07-15T13:33:13.676+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": {"data":[{"Id":"62c24a67f037785544ad8ab8","MaterialCode":"1100202566","MaterialType":"工量具类","MaterialName":"齿轮轴","Specifications":"PS1C20R13E-F3","Supplier":"常州市凯博计量检测有限公司","Craft":"V法","Texture":"HT200","Process":"粗车","PurchaseStatus":"成品","ReceivingWarehouse":"工业齿轮箱半成品库","WeighStage":"物料首称","WeighNum":11,"WeighTime":"2022-07-04T00:00:00","BpmTaskId":764164,"CreateTime":"2022-07-04T00:00:00","Validate":true},{"Id":"62c25ca8250a544b2aad185f","MaterialCode":"1100202566","MaterialType":"工量具类","MaterialName":"齿轮轴","Specifications":"PS1C20R13E-F3","Supplier":"常州市凯博计量检测有限公司","Craft":"V法","Texture":"HT200","Process":"粗车","PurchaseStatus":"成品","ReceivingWarehouse":"工业齿轮箱半成品库","WeighStage":"物料首称","WeighNum":12,"WeighTime":"2022-07-08T00:00:00","BpmTaskId":764164,"CreateTime":"2022-07-10T00:00:00","Validate":false}],"total":2}}
+2022-07-15T13:44:42.375+0800	INFO	mysqldb/db_handler.go:13	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T13:44:42.378+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 0}
+2022-07-15T13:46:32.949+0800	INFO	mysqldb/db_handler.go:13	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T13:46:32.950+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T13:46:32.950+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 0}
+2022-07-15T13:46:35.166+0800	INFO	mysqldb/db_handler.go:13	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T13:46:35.166+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T13:46:35.166+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 0}
+2022-07-15T13:48:31.487+0800	INFO	mysqldb/db_handler.go:13	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T13:48:31.488+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T13:53:20.734+0800	INFO	mysqldb/db_handler.go:13	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T13:53:20.735+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T14:04:12.918+0800	INFO	mysqldb/db_handler.go:13	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T14:04:12.919+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T14:04:30.102+0800	INFO	mysqldb/db_handler.go:13	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T14:04:30.102+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T14:12:39.029+0800	INFO	mysqldb/db_handler.go:15	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T14:12:39.030+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T14:13:03.201+0800	INFO	mysqldb/db_handler.go:15	db add new user	{"返回错误": "Error 1364: Field 'user_name' doesn't have a default value"}
+2022-07-15T14:13:03.201+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T14:15:44.685+0800	INFO	mysqldb/db_handler.go:15	db add new user	{"返回错误": "Error 1364: Field 'password' doesn't have a default value"}
+2022-07-15T14:15:44.686+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T14:16:10.799+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 1}
+2022-07-15T14:33:23.420+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T14:33:23.464+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T14:33:28.296+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 1}
+2022-07-15T14:42:39.196+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T14:42:39.237+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T14:58:47.277+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T14:58:47.328+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T14:58:53.658+0800	INFO	mysqldb/db_handler.go:15	db add new user	{"返回错误": "unsupported data"}
+2022-07-15T14:58:53.658+0800	INFO	APIResponse/response.go:31	AddNewUser error	{"调用 Service": "AddNewUser error 处理出错", "返回错误": 0}
+2022-07-15T15:05:03.163+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 1}
+2022-07-15T15:05:56.564+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T15:10:55.638+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->test"}
+2022-07-15T15:10:55.812+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->test"}
+2022-07-15T15:13:23.105+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T15:13:34.722+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T15:19:14.865+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T15:19:15.055+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T15:20:13.579+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:20:13.636+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:21:21.753+0800	INFO	APIResponse/response.go:31	add Policy failed	{"调用 Service": "add Policy failed 处理出错", "返回错误": ""}
+2022-07-15T15:22:57.659+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:22:57.681+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:23:45.656+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T15:23:45.809+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T15:25:54.261+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:25:54.302+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:26:38.140+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:26:38.179+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:27:20.325+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:27:20.367+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:35:24.458+0800	INFO	APIResponse/response.go:31	add Policy failed	{"调用 Service": "add Policy failed 处理出错", "返回错误": ""}
+2022-07-15T15:36:15.409+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T15:36:47.073+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:36:47.112+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:40:03.390+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:40:03.428+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:46:40.255+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:46:40.295+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:46:51.931+0800	INFO	Service/service.go:52	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T15:46:51.969+0800	INFO	Service/service.go:87	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T15:46:51.969+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T15:47:36.188+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:47:36.594+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:47:43.401+0800	INFO	Service/service.go:52	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T15:47:43.426+0800	INFO	Service/service.go:87	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T15:47:43.426+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T15:48:59.933+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T15:49:00.282+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T15:49:21.577+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T15:49:21.605+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T15:49:21.605+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T15:49:38.004+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T15:49:38.048+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T15:49:38.048+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T15:53:51.381+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->gfj"}
+2022-07-15T15:53:51.456+0800	INFO	Auth/auth.go:59	UserAuthCallback fail	{"UserAuthCallback user_name fail": "--------->gfj"}
+2022-07-15T15:54:02.823+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T15:54:02.968+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T15:56:26.807+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T15:56:26.845+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T15:56:26.845+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:06:24.894+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T16:06:25.082+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T16:06:31.121+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T16:06:31.290+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T16:07:39.517+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T16:07:39.685+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T16:09:19.974+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:09:19.998+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:09:19.998+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:12:51.515+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:12:51.546+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:12:51.546+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:14:49.377+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:14:49.400+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:14:49.400+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:15:55.938+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:15:55.954+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:15:55.954+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:17:28.820+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T16:17:28.936+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T16:17:55.920+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:17:55.960+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:17:55.960+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:18:24.929+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:18:24.965+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:18:24.965+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:18:41.572+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:18:41.601+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:18:41.601+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:18:46.674+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T16:18:46.845+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T16:18:48.716+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:18:48.751+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:18:48.751+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T16:23:40.212+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T16:23:59.608+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T16:24:04.827+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T16:26:38.316+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-15T16:26:54.589+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T16:26:54.757+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T16:30:24.724+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T16:30:24.882+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T16:30:26.858+0800	INFO	Service/service.go:51	GetAllCraft	{"调用 Service": "GetAllCraft 处理请求"}
+2022-07-15T16:30:27.056+0800	INFO	Service/service.go:81	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-15T16:30:27.056+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": [{"Id":"62b12dea3b72b55e4deb49c4","Name":"V法"},{"Id":"62b162f5d2350d3e494281b6","Name":"覆膜砂"},{"Id":"62b279a86d38630a961e617a","Name":"湿砂机械造型"},{"Id":"62b3b94600406d191e8369ec","Name":"湿砂机械造型（覆膜砂砂芯）"},{"Id":"62b3b95b00406d191e8369ed","Name":"湿砂手工造型"},{"Id":"62b3b99b00406d191e8369ee","Name":"湿砂手工造型(覆膜砂砂芯)"},{"Id":"62b3bba66a1d4731c9677523","Name":"湿砂手工造型（树脂泥芯）"},{"Id":"62b3bbae6a1d4731c9677524","Name":"树脂砂"},{"Id":"62b3bd1d6a1d4731c9677527","Name":"消失模"},{"Id":"62c3edba250a544b2aad186d","Name":"无"},{"Id":"62d0b4eada4f8a7a22e0850d","Name":"test11"}]}
+2022-07-15T17:02:10.732+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-15T17:02:11.085+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-15T17:02:43.943+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-15T17:02:44.108+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-15T17:02:59.321+0800	INFO	Service/service.go:126	DeleteCraftWithId	{"调用 Service": "DeleteCraftWithId 处理请求"}
+2022-07-15T17:02:59.351+0800	INFO	APIResponse/response.go:41	DeleteCraftWithId success	{"调用 Service": "DeleteCraftWithId success 处理请求", "处理返回值": "工艺已删除：1"}
+2022-07-16T09:13:27.719+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-16T09:14:47.199+0800	INFO	Service/service.go:88	AddCraft	{"调用 Service": "AddCraft 处理请求"}
+2022-07-16T09:14:47.303+0800	INFO	APIResponse/response.go:41	AddCraft success	{"调用 Service": "AddCraft success 处理请求", "处理返回值": "ObjectID(\"62d21107d863cb68670130e3\")"}
+2022-07-16T09:36:18.877+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}

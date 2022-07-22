@@ -1,0 +1,27 @@
+# title = "config TOML"
+#
+# listen = "0.0.0.0:9000"
+#
+# [mysql]
+# username = "root"
+# password = "Gmmysql8011!"
+# url = "(10.10.6.6:3306)/gmfrdb"
+#
+# [casbin]
+# model_config = 'config/model.conf'
+
+port='8080'
+realm='zone name just for test'
+key='secret key salt'
+tokenLookup='header: Authorization, query: token, cookie: jwt'
+tokenHeadName='Bearer'
+loginPath='/login'
+authPath='/auth'
+refreshPath='/refresh_token'
+testPath='/hello'
+db_host     = "10.10.6.90"
+db_port     = "3306"
+db_user     = "root"
+db_name   = "mdm"
+db_password = "root"
+model_config = 'config/model.conf'

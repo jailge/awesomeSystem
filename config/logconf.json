@@ -1,0 +1,8 @@
+{
+  "level": "info",
+  "filename": "logs/viper_zap_gin.log",
+  "maxsize": "1",
+  "max_age": "30",
+  "max_backups": "5",
+  "version": "v1.8"
+}

@@ -1,0 +1,50 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: awesomesystem-user-deployment
+  namespace: test
+  labels:
+    app: awesomesystem-user
+spec:
+  selector:
+    matchLabels:
+      app: awesomesystem-user
+  replicas: 2
+  minReadySeconds: 5
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: awesomesystem-user
+    spec:
+      containers:
+        - image: jailge/awesomesystem-user:1.0.0
+          name: awesomesystem-user
+          imagePullPolicy: Always
+#          command: ["./main","-v","v1.3"]
+          ports:
+            - containerPort: 8878
+              protocol: TCP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: awesomesystem-user-service
+  namespace: test
+  labels:
+    app: awesomesystem-user
+spec:
+  selector:
+    app: awesomesystem-user
+  ports:
+    - name: awesomesystem-user-port
+      protocol: TCP
+      port: 8878
+      targetPort: 8878
+      nodePort: 31878
+  type: NodePort

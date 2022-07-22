@@ -1,0 +1,46 @@
+2022-07-14T11:36:07.632+0800	INFO	service/service.go:19	this is hello func	{"test": "test--------->"}
+2022-07-14T11:36:10.995+0800	INFO	service/service.go:19	this is hello func	{"test": "test--------->"}
+2022-07-14T15:27:57.896+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-14T15:28:03.282+0800	INFO	mongodb/mdb_handler.go:96	FindAll error	{"FindAll error": "--------->"}
+2022-07-14T15:34:13.655+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-14T15:34:15.625+0800	INFO	mongodb/mdb_handler.go:96	FindAll error	{"FindAll error": "--------->"}
+2022-07-14T15:35:20.824+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-14T15:35:23.240+0800	INFO	Service/service.go:58	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:25.719+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-14T15:44:27.647+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:49.294+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:50.412+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:51.183+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:51.899+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:53.232+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:54.161+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:55.080+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:55.769+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:56.507+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:57.417+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:58.250+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:59.113+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:44:59.792+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:00.507+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:01.223+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:44.990+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:46.108+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:46.899+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:47.592+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:48.325+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:48.942+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:45:49.533+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:04.467+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-14T15:46:07.077+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:09.727+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:10.547+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:11.267+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:12.066+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:12.885+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:13.517+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:46:14.446+0800	INFO	Service/service.go:60	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:56:38.623+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-14T15:58:10.094+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->test"}
+2022-07-14T15:58:10.219+0800	INFO	Auth/auth.go:49	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->test"}
+2022-07-14T15:58:21.387+0800	INFO	Service/service.go:57	GetAllCraft	{"GetAllCraft": "--------->"}
+2022-07-14T15:58:32.544+0800	INFO	Service/service.go:57	GetAllCraft	{"GetAllCraft": "--------->"}

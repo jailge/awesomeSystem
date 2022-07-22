@@ -1,0 +1,35 @@
+# settings.yaml
+name: "go-gin"
+logsAddress: "./logs/"
+
+user:
+  port: 8878
+
+Weight:
+  port: 8877
+
+mysql:
+  name: "root"
+  host: "10.10.6.90"
+  port: 3306
+  password: "root"
+  dbName: "mdm"
+
+redis:
+  host: "10.10.6.70"
+  port: 6379
+  password: "redis"
+  db: 1
+
+mongodb:
+  host: "10.10.6.90"
+  port: 27017
+  name: "user"
+  password: "123456"
+  dbName: "weight"
+
+jwt:
+  realm: "zone name"
+  key: "secret key salt"
+  tokenLookup: "header: Authorization, query: token, cookie: jwt"
+  tokenHeadName: "Bearer"

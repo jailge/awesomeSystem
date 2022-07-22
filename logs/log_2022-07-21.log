@@ -1,0 +1,129 @@
+2022-07-21T09:14:58.495+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T09:14:58.733+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T09:15:09.267+0800	INFO	middleware/loggerMidd.go:30	/user/register	{"statusxixixixi": 401, "method": "POST", "path": "/user/register", "query": "", "ip": "10.10.181.111", "user-agent": "apifox/1.0.0 (https://www.apifox.cn)", "errors": "", "cost": "166µs"}
+2022-07-21T09:17:07.146+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T09:17:07.391+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T09:17:11.137+0800	INFO	middleware/loggerMidd.go:30	/user/register	{"statusxixixixi": 401, "method": "POST", "path": "/user/register", "query": "", "ip": "10.10.181.111", "user-agent": "apifox/1.0.0 (https://www.apifox.cn)", "errors": "", "cost": "134.542µs"}
+2022-07-21T09:22:33.681+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T09:22:33.906+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T09:22:39.883+0800	INFO	middleware/loggerMidd.go:30	/user/register	{"statusxixixixi": 401, "method": "POST", "path": "/user/register", "query": "", "ip": "10.10.181.111", "user-agent": "apifox/1.0.0 (https://www.apifox.cn)", "errors": "", "cost": "178.25µs"}
+2022-07-21T09:23:30.802+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T09:23:31.034+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T09:23:37.783+0800	INFO	middleware/loggerMidd.go:30	/user/register	{"statusxixixixi": 401, "method": "POST", "path": "/user/register", "query": "", "ip": "10.10.181.111", "user-agent": "apifox/1.0.0 (https://www.apifox.cn)", "errors": "", "cost": "282.792µs"}
+2022-07-21T09:23:57.941+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-21T09:23:58.070+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-21T09:27:48.527+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T09:27:48.719+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T09:27:54.856+0800	INFO	middleware/loggerMidd.go:30	/user/register	{"statusxixixixi": 401, "method": "POST", "path": "/user/register", "query": "", "ip": "10.10.181.111", "user-agent": "apifox/1.0.0 (https://www.apifox.cn)", "errors": "", "cost": "130.417µs"}
+2022-07-21T09:28:39.776+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T09:28:40.005+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T09:29:29.690+0800	INFO	service/service.go:36	AddNewUser	{"调用 Service": "AddNewUser 处理请求"}
+2022-07-21T09:29:29.855+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 1}
+2022-07-21T09:43:53.494+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {}}
+2022-07-21T09:45:40.705+0800	INFO	mongodb/mdb.go:77	Connected to MongoDB!	{"MongoDB": "--------->connect"}
+2022-07-21T09:45:40.777+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T09:45:41.029+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T09:45:41.064+0800	INFO	redisdb/rds.go:48	Redis connect!	{"Redis": "--------->connect"}
+2022-07-21T09:45:50.388+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"weight":["/weight/craft/* PUT","/weight/craft/* DELETE","/weight/craft GET","/weight/craft POST","/weight/process POST","/weight/process GET","/weight/process/* DELETE","/weight/process/* PUT","/weight/texture/* PUT","/weight/texture/* DELETE","/weight/purchase_status/* DELETE","/weight/purchase_status/* PUT","/weight/purchase_status GET","/weight/purchase_status POST","/weight/weigh_multi_condition_search POST","/weight/cal_multi_condition_search POST"]}}
+2022-07-21T10:01:18.426+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T10:01:18.645+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T10:02:24.261+0800	INFO	middleware/loggerMidd.go:30	/user/add_user	{"statusxixixixi": 401, "method": "POST", "path": "/user/add_user", "query": "", "ip": "10.10.181.111", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "cost": "202.25µs"}
+2022-07-21T10:02:55.553+0800	INFO	middleware/loggerMidd.go:30	/user/add_user	{"statusxixixixi": 403, "method": "POST", "path": "/user/add_user", "query": "", "ip": "10.10.181.111", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "cost": "1.44125ms"}
+2022-07-21T10:03:17.424+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-21T10:03:17.587+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-21T10:03:28.348+0800	INFO	middleware/loggerMidd.go:30	/user/add_user	{"statusxixixixi": 403, "method": "POST", "path": "/user/add_user", "query": "", "ip": "10.10.181.111", "user-agent": "PostmanRuntime/7.28.4", "errors": "", "cost": "830.958µs"}
+2022-07-21T10:06:01.221+0800	INFO	middleware/loggerMidd.go:30	/user/acs	{"statusxixixixi": 403, "method": "POST", "path": "/user/acs", "query": "", "ip": "10.10.181.111", "user-agent": "apifox/1.0.0 (https://www.apifox.cn)", "errors": "", "cost": "1.858833ms"}
+2022-07-21T10:06:09.654+0800	INFO	Auth/auth.go:29	UserAuthCallback	{"UserAuthCallback user_name": "--------->admin"}
+2022-07-21T10:06:09.797+0800	INFO	Auth/auth.go:52	UserAuthCallback success	{"UserAuthCallback user_name success": "--------->admin"}
+2022-07-21T10:06:31.424+0800	INFO	middleware/loggerMidd.go:30	/user/acs	{"statusxixixixi": 403, "method": "POST", "path": "/user/acs", "query": "", "ip": "10.10.181.111", "user-agent": "apifox/1.0.0 (https://www.apifox.cn)", "errors": "", "cost": "1.297625ms"}
+2022-07-21T10:08:05.093+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-21T10:08:19.913+0800	INFO	APIResponse/response.go:41	add Policy success	{"调用 Service": "add Policy success 处理请求", "处理返回值": ""}
+2022-07-21T10:08:43.344+0800	INFO	service/service.go:64	NewUser	{"调用 Service": "NewUser 处理请求"}
+2022-07-21T10:12:18.741+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T10:12:18.818+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T10:12:35.248+0800	INFO	service/service.go:64	NewUser	{"调用 Service": "NewUser 处理请求"}
+2022-07-21T10:13:41.408+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T10:13:41.668+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T10:14:03.026+0800	INFO	service/service.go:64	NewUser	{"调用 Service": "NewUser 处理请求"}
+2022-07-21T10:14:03.195+0800	INFO	APIResponse/response.go:41	新增成功	{"调用 Service": "新增成功 处理请求", "处理返回值": 1}
+2022-07-21T11:29:56.520+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T11:29:56.591+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T11:31:28.799+0800	INFO	APIResponse/response.go:31	未注册该用户	{"调用 Service": "未注册该用户 处理出错", "返回错误": ""}
+2022-07-21T11:32:58.391+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T11:32:58.626+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T11:33:10.455+0800	INFO	APIResponse/response.go:31	未注册该用户	{"调用 Service": "未注册该用户 处理出错", "返回错误": ""}
+2022-07-21T12:06:21.339+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T12:06:21.533+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T12:06:35.113+0800	INFO	APIResponse/response.go:41	success	{"调用 Service": "success 处理请求", "处理返回值": {"email":"111@11","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MTUsIk5pY2tOYW1lIjoiYWRtaW4iLCJBdXRob3JpdHlJZCI6MSwiZXhwIjoxNjYwOTY4Mzk1LCJpc3MiOiJ0ZXN0IiwibmJmIjoxNjU4Mzc2Mzk1fQ.7X_idazWWCodRHboAajT6XMIKU-GxD9bdDiHxWbyAxk"}}
+2022-07-21T12:09:23.251+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T12:09:23.494+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T12:12:22.781+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T12:12:23.019+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T12:12:41.402+0800	INFO	APIResponse/response.go:31	请登录	{"调用 Service": "请登录 处理出错", "返回错误": ""}
+2022-07-21T12:13:07.906+0800	INFO	APIResponse/response.go:31	请登录	{"调用 Service": "请登录 处理出错", "返回错误": ""}
+2022-07-21T12:15:59.913+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T12:16:00.147+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T12:16:04.979+0800	INFO	APIResponse/response.go:31	未登陆	{"调用 Service": "未登陆 处理出错", "返回错误": ""}
+2022-07-21T12:18:46.027+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T12:18:46.254+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T12:18:50.098+0800	INFO	service/service.go:24	this is hello func	{"test": "test--------->"}
+2022-07-21T12:20:34.525+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T12:20:34.772+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T12:20:40.372+0800	INFO	service/service.go:35	this is hello func	{"test": "test--------->"}
+2022-07-21T15:06:34.875+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:06:35.085+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:08:24.045+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:08:24.253+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:09:00.040+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:09:00.191+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:10:19.119+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:10:19.364+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:14:49.776+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:14:49.885+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:15:13.648+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:15:13.874+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:15:17.912+0800	INFO	service/service.go:35	this is hello func	{"test": "test--------->"}
+2022-07-21T15:15:21.849+0800	INFO	service/service.go:35	this is hello func	{"test": "test--------->"}
+2022-07-21T15:15:22.685+0800	INFO	service/service.go:35	this is hello func	{"test": "test--------->"}
+2022-07-21T15:37:33.974+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:37:34.204+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:38:13.609+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:38:13.856+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:38:49.239+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:40:46.979+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:40:47.064+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:40:51.785+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:40:52.991+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:40:53.974+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:40:54.678+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:40:55.456+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:43:12.247+0800	INFO	APIResponse/response.go:31	no user	{"调用 Service": "no user 处理出错", "返回错误": ""}
+2022-07-21T15:43:19.877+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:44:23.855+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:47:25.079+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:47:25.326+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:47:29.022+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:47:33.058+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:47:36.703+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:47:37.795+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:47:38.740+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:47:39.586+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:47:55.828+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T15:47:56.057+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T15:48:02.275+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:48:04.887+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:48:07.995+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T15:48:08.979+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET"]}}
+2022-07-21T16:31:50.202+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T16:31:50.310+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T16:32:32.497+0800	INFO	Controller/user.go:76	AddRole	{"调用 Service": "AddRole 处理请求"}
+2022-07-21T16:32:32.568+0800	INFO	APIResponse/response.go:41	add role success	{"调用 Service": "add role success 处理请求", "处理返回值": {"Id":2,"RoleName":"test"}}
+2022-07-21T16:44:25.650+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T16:44:25.732+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T16:44:34.263+0800	INFO	Controller/user.go:92	AllRoles	{"调用 Service": "AllRoles 处理请求"}
+2022-07-21T16:44:34.281+0800	INFO	APIResponse/response.go:41	all role success	{"调用 Service": "all role success 处理请求", "处理返回值": [{"Id":1,"RoleName":"admin"},{"Id":2,"RoleName":"test"}]}
+2022-07-21T16:48:25.977+0800	INFO	mysqldb/mysql.go:31	Mysql connect!	{"Mysql": "--------->connect"}
+2022-07-21T16:48:26.224+0800	INFO	ACS/enforcer.go:30	casbin connect!	{"casbin": "--------->connect"}
+2022-07-21T16:48:39.132+0800	INFO	Controller/user.go:103	AllPermissions	{"调用 Service": "AllPermissions 处理请求"}
+2022-07-21T16:48:39.146+0800	INFO	APIResponse/response.go:41	all role success	{"调用 Service": "all role success 处理请求", "处理返回值": [{"Id":1,"Resource":"/user/hello","Action":"GET"}]}
+2022-07-22T09:47:00.309+0800	INFO	APIResponse/response.go:41	用户权限列表	{"调用 Service": "用户权限列表 处理请求", "处理返回值": {"user":["/user/hello GET","/user/add_user POST"],"weight":["/weight/craft GET","/weight/craft POST","/weight/craft/* DELETE","/weight/craft/* PUT","/weight/process GET","/weight/process POST","/weight/process/* DELETE","/weight/process/* PUT","/weight/texture GET","/weight/texture POST","/weight/texture/* DELETE","/weight/texture/* PUT","/weight/purchase_status GET","/weight/purchase_status POST","/weight/purchase_status/* DELETE","/weight/purchase_status/* PUT","/weight/weigh_multi_condition_search POST","/weight/cal_multi_condition_search POST"]}}
