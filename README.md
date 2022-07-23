@@ -4,6 +4,8 @@
 ***
 
 # 鉴权
+*RBAC*
+
 *Casbin*
 >[p admin /weight/* GET]
 

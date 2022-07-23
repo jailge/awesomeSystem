@@ -1,19 +1,48 @@
-//创建一个Pod的模板，label为jenkins-slave
-podTemplate(label: 'jenkins-slave', cloud: 'kubernetes', containers: [
-    containerTemplate(
-        name: 'jnlp',
-        image: "jenkins/jnlp-slave:latest"
-    )
-  ]
-)
-{
-//引用jenkins-slave的pod模块来构建Jenkins-Slave的pod
-node("jenkins-slave"){
-      // 第一步
-      stage('测试'){
-    sh '''
-            echo "hello world"
-        '''
-      }
-  }
+pipeline {
+    agent {
+        kubernetes{
+            label 'jenkins-slave'
+        }
+
+    }
+    environment{
+        DOCKER_USERNAME = credentials('DOCKER_USERNAME')
+        DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
+    }
+    stages {
+        stage('docker login') {
+            steps{
+                sh(script: """
+                    docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+                """, returnStdout: true)
+            }
+        }
+
+        stage('git clone') {
+            steps{
+                sh(script: """
+                    git clone https://github.com/jailge/awesomeSystem.git
+                """, returnStdout: true)
+            }
+        }
+
+        stage('docker build') {
+            steps{
+                sh script: '''
+                #!/bin/bash
+                cd $WORKSPACE/awesomeSystem/
+                docker build . --network host -t jailge/awesomesystem:${BUILD_NUMBER}
+                '''
+            }
+        }
+
+        stage('docker push') {
+            steps{
+                sh(script: """
+                    docker push jailge/awesomesystem:${BUILD_NUMBER}
+                """)
+            }
+        }
+
+    }
 }
