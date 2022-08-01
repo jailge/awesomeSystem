@@ -6,6 +6,8 @@ pipeline {
 
     }
     environment{
+        IMAGE_NAME = "${params.image_name}"
+        BUILD_NUMBER = "${params.BUILD_NUMBER}"
         DOCKER_USERNAME = credentials('DOCKER_USERNAME')
         DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
     }
@@ -31,7 +33,7 @@ pipeline {
                 sh script: '''
                 #!/bin/bash
                 cd $WORKSPACE/awesomeSystem/
-                docker build . --network host -t jailge/awesomesystem:${BUILD_NUMBER}
+                docker build . --network host -t jailge/$IMAGE_NAME:$BUILD_NUMBER
                 '''
             }
         }
@@ -39,7 +41,7 @@ pipeline {
         stage('docker push') {
             steps{
                 sh(script: """
-                    docker push jailge/awesomesystem:${BUILD_NUMBER}
+                    docker push jailge/$IMAGE_NAME:$BUILD_NUMBER
                 """)
             }
         }
