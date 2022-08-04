@@ -93,9 +93,9 @@ type CalculateMaterialRecord struct {
 	Texture        string  `bson:"texture"`
 	Process        string  `bson:"process"`
 	PurchaseStatus string  `bson:"purchase_status"`
-	CalStage       string  `bson:"weigh_stage"`
-	CalNum         float64 `bson:"weigh_num"`
-	CalTime        string  `bson:"weigh_time"`
+	CalStage       string  `bson:"cal_stage"`
+	CalNum         float64 `bson:"cal_num"`
+	CalTime        string  `bson:"cal_time"`
 	BpmTaskId      int     `bson:"bpm_task_id"`
 	CreateTime     string  `bson:"create_time"`
 	Validate       string  `bson:"validate"`
