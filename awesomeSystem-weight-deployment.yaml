@@ -3,14 +3,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: awesomesystem-weight-deployment
-  namespace: test
+  namespace: uat
   labels:
     app: awesomesystem-weight
 spec:
   selector:
     matchLabels:
       app: awesomesystem-weight
-  replicas: 3
+  replicas: 2
   minReadySeconds: 5
   strategy:
     type: RollingUpdate
@@ -23,19 +23,23 @@ spec:
         app: awesomesystem-weight
     spec:
       containers:
-        - image: jailge/awesomesystem-weight:1.0.0
+        - image: jailge/awesomesystem-weight:1.1.1
           name: awesomesystem-weight
           imagePullPolicy: Always
 #          command: ["./main","-v","v1.3"]
           ports:
             - containerPort: 8877
               protocol: TCP
+          resources:
+            requests:
+              cpu: 250m
+              memory: 500Mi
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: awesomesystem-weight-service
-  namespace: test
+  namespace: uat
   labels:
     app: awesomesystem-weight
 spec:
@@ -46,5 +50,5 @@ spec:
       protocol: TCP
       port: 8877
       targetPort: 8877
-      nodePort: 31877
+      nodePort: 30877
   type: NodePort

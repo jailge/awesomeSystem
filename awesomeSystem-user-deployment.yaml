@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: awesomesystem-user-deployment
-  namespace: test
+  namespace: uat
   labels:
     app: awesomesystem-user
 spec:
@@ -23,7 +23,7 @@ spec:
         app: awesomesystem-user
     spec:
       containers:
-        - image: jailge/awesomesystem-user:1.0.0
+        - image: jailge/awesomesystem-user:1.1.0
           name: awesomesystem-user
           imagePullPolicy: Always
 #          command: ["./main","-v","v1.3"]
@@ -33,13 +33,13 @@ spec:
           resources:
             requests:
               cpu: 250m
-              memory: 750Mi
+              memory: 500Mi
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: awesomesystem-user-service
-  namespace: test
+  namespace: uat
   labels:
     app: awesomesystem-user
 spec:
@@ -50,5 +50,5 @@ spec:
       protocol: TCP
       port: 8878
       targetPort: 8878
-      nodePort: 31878
+      nodePort: 30878
   type: NodePort
