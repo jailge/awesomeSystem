@@ -421,3 +421,14 @@ type Policy struct {
 	Object  string `json:"object"`
 	Action  string `json:"action"`
 }
+
+type ExistCalRecord struct {
+	MaterialCode   string `json:"material_code"`
+	MaterialType   string `json:"material_type"`
+	MaterialName   string `json:"material_name"`
+	Specifications string `json:"specifications"`
+	Craft          string `json:"craft"`
+	Texture        string `json:"texture"`
+	Process        string `json:"process"`
+	PurchaseStatus string `json:"purchase_status"`
+}

@@ -34,6 +34,8 @@ func Api(R *gin.Engine) {
 
 	R.GET("/permission/:user", Service.GetUserAuth)
 
+	R.POST("/cal/exist_record", Service.ExistCalRecord)
+
 	weight := R.Group("/weight")
 	weight.Use(middleware.RateLimitMiddleware(time.Second, 100, 100), middleware.GinLogger(), middleware.GinRecovery(true), middleware.JWTAuth(), middleware.IsAdminAuth())
 	{

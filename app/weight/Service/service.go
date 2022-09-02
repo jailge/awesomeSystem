@@ -12,6 +12,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"github.com/goccy/go-json"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -1055,4 +1056,31 @@ func DeletePolicy(c *gin.Context) {
 	} else {
 		APIResponse.Err(c, http.StatusBadRequest, 400, "delete Policy failed", "")
 	}
+}
+
+func ExistCalRecord(c *gin.Context) {
+	var ec entity.ExistCalRecord
+	_ = c.BindJSON(&ec)
+	fmt.Println(ec)
+	fmt.Println(c.GetRawData())
+	//if err != nil {
+	//	APIResponse.Err(c, http.StatusBadRequest, 400, "ExistCalRecord", err.Error())
+	//}
+
+	var http_body []byte
+	http_body, _ = c.GetRawData()
+	param_info := make(map[string]interface{})
+	param_err := json.Unmarshal(http_body, &param_info)
+	fmt.Println(param_err)
+
+	for i, ch := range http_body {
+
+		switch {
+		//case ch > '~':   http_body[i] = ' '
+		case ch == '\\':
+			http_body[i] = '\\'
+		}
+	}
+	fmt.Println(http_body)
+	fmt.Println(param_info)
 }
