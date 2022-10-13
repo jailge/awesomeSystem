@@ -634,7 +634,7 @@ func GetAllPurchaseStatus(c *gin.Context) {
 
 }
 
-// AddPurchaseStatus 新增工序
+// AddPurchaseStatus 新增采购状态
 func AddPurchaseStatus(c *gin.Context) {
 	zap.L().Info("AddPurchaseStatus", zap.Any("调用 Service", "AddPurchaseStatus 处理请求"))
 	var n entity.NewPurchaseStatus

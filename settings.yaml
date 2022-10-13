@@ -22,13 +22,13 @@ redis:
   db: 1
 
 mongodb:
-  host: "10.10.6.90"
-#  host: "10.10.6.130"
+#  host: "10.10.6.90"
+  host: "10.10.6.130"
   port: 27017
-  name: "user"
-#  name: "admin"
-  password: "123456"
-#  password: "gmxxb8011!"
+#  name: "user"
+  name: "admin"
+#  password: "123456"
+  password: "gmxxb8011!"
   dbName: "weight"
 
 jwt:
