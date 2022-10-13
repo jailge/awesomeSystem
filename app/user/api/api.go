@@ -47,7 +47,7 @@ func Api(R *gin.Engine) {
 
 	user := R.Group("/user")
 	user.GET("/refresh_token", authMiddleware.RefreshHandler)
-	user.Use(middleware.RateLimitMiddleware(time.Second, 100, 100), middleware.GinLogger(), middleware.GinRecovery(true), authMiddleware.MiddlewareFunc())
+	user.Use(middleware.RateLimitMiddleware(time.Second, 100, 100), middleware.GinLogger(), middleware.GinRecovery(true), middleware.JWTAuth(), middleware.IsAdminAuth())
 	{
 		//user.GET("/hello", service.HelloHandler)
 		//user.POST("/register", service.AddNewUser)

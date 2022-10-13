@@ -27,6 +27,16 @@ type PurchaseStatus struct {
 	Name string `bson:"name"`
 }
 
+type BelongTo struct {
+	Id   string `bson:"_id"`
+	Name string `bson:"name"`
+}
+
+type WeightStatus struct {
+	Id   string `bson:"_id"`
+	Name string `bson:"name"`
+}
+
 type Material struct {
 	Id            string `bson:"_id"`
 	InnerCode     string `bson:"inner_code"`

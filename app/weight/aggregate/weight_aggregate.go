@@ -253,6 +253,21 @@ func GenPipeline(mc entity.WeighMultiCondition, skip int, limit int) (bl []bson.
 		bl = append(bl, pip4)
 	}
 
+	if mc.BelongTo != "" {
+		pip7 := bson.D{
+			{
+				"$match",
+				bson.D{
+					{"belong_to",
+						bson.D{
+							{"$eq", mc.BelongTo}},
+					},
+				},
+			},
+		}
+		bl = append(bl, pip7)
+	}
+
 	if mc.Supplier != "" {
 		pip5 := bson.D{
 
@@ -456,6 +471,22 @@ func GenCalPipeline(mc entity.CalMultiCondition, skip int, limit int) (bl []bson
 			},
 		}
 		bl = append(bl, pip4)
+	}
+
+	if mc.BelongTo != "" {
+		pip7 := bson.D{
+
+			{
+				"$match",
+				bson.D{
+					{"belong_to",
+						bson.D{
+							{"$eq", mc.BelongTo}},
+					},
+				},
+			},
+		}
+		bl = append(bl, pip7)
 	}
 
 	if mc.Validate != "" {

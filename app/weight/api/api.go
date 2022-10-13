@@ -61,6 +61,16 @@ func Api(R *gin.Engine) {
 		weight.DELETE("/purchase_status/:id", Service.DeletePurchaseStatusWithId)
 		weight.PUT("/purchase_status/:id", Service.UpdatePurchaseStatus)
 
+		weight.GET("/belong_to", Service.GetAllBelongTo)
+		weight.POST("/belong_to", Service.AddBelongTo)
+		weight.DELETE("/belong_to/:id", Service.DeleteBelongToWithId)
+		weight.PUT("/belong_to/:id", Service.UpdateBelongTo)
+
+		weight.GET("/weight_status", Service.GetAllWeightStatus)
+		weight.POST("/weight_status", Service.AddWeightStatus)
+		weight.DELETE("/weight_status/:id", Service.DeleteWeightStatusWithId)
+		weight.PUT("/weight_status/:id", Service.UpdateWeightStatus)
+
 		weight.POST("/weigh_multi_condition_search", Service.WeighMultiConditionSearch)
 		weight.POST("/cal_multi_condition_search", Service.CalMultiConditionSearch)
 

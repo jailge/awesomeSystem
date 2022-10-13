@@ -18,6 +18,8 @@ type WeighMaterialRecord struct {
 	BpmTaskId          int     `bson:"bpm_task_id"`
 	CreateTime         string  `bson:"create_time"`
 	Validate           string  `bson:"validate"`
+	BelongTo           string  `bson:"belong_to"`
+	WeightStatus       string  `bson:"weight_status"`
 }
 
 type NewWeighMaterialRecord struct {
@@ -99,6 +101,8 @@ type CalculateMaterialRecord struct {
 	BpmTaskId      int     `bson:"bpm_task_id"`
 	CreateTime     string  `bson:"create_time"`
 	Validate       string  `bson:"validate"`
+	BelongTo       string  `bson:"belong_to"`
+	WeightStatus   string  `bson:"weight_status"`
 }
 
 // NewCalMaterialRecord 新增理算

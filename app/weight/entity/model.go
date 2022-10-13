@@ -225,6 +225,24 @@ type UpPurchaseStatus struct {
 	Name     string `json:"name"`
 }
 
+type NewBelongTo struct {
+	Name string `json:"name"`
+}
+type UpBelongTo struct {
+	//Id       string `json:"id"`
+	ClientId string `json:"client_id"`
+	Name     string `json:"name"`
+}
+
+type NewWeightStatus struct {
+	Name string `json:"name"`
+}
+type UpWeightStatus struct {
+	//Id       string `json:"id"`
+	ClientId string `json:"client_id"`
+	Name     string `json:"name"`
+}
+
 type CraftId struct {
 	Id string `uri:"id"`
 }
@@ -286,6 +304,7 @@ type WeighMultiCondition struct {
 	Validate           string `json:"validate"`
 	PageSize           int    `json:"page_size" binding:"required"`
 	PageNum            int    `json:"page_num" binding:"required"`
+	BelongTo           string `json:"belong_to"`
 }
 
 type CalMultiCondition struct {
@@ -298,6 +317,7 @@ type CalMultiCondition struct {
 	Validate           string `json:"validate"`
 	PageSize           int    `json:"page_size" binding:"required"`
 	PageNum            int    `json:"page_num" binding:"required"`
+	BelongTo           string `json:"belong_to"`
 }
 
 type MultiConditionAck struct {
@@ -431,4 +451,6 @@ type ExistCalRecord struct {
 	Texture        string `json:"texture"`
 	Process        string `json:"process"`
 	PurchaseStatus string `json:"purchase_status"`
+	BelongTo       string `json:"belong_to"`
+	WeightStatus   string `json:"weight_status"`
 }

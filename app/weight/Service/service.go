@@ -34,6 +34,8 @@ const (
 	collectionPurchaseStatus  = "purchase_status"
 	collectionMaterial        = "material"
 	collectionSupplier        = "supplier"
+	collectionBelongTo        = "belong_to"
+	collectionWeightStatus    = "weight_status"
 )
 
 var (
@@ -78,7 +80,7 @@ func GetUserAuth(c *gin.Context) {
 }
 
 // *********************************************************
-// Crate
+// Craft
 // *********************************************************
 
 // GetAllCraft 所有工艺
@@ -761,6 +763,346 @@ func UpdatePurchaseStatus(c *gin.Context) {
 		// 如果查询错误
 		//fmt.Println(err)
 		APIResponse.Err(c, http.StatusOK, 400, "UpdatePurchaseStatus 发生错误", err)
+	}
+
+}
+
+// *********************************************************
+// belong_to
+// *********************************************************
+
+// GetAllBelongTo 所有归属
+func GetAllBelongTo(c *gin.Context) {
+	zap.L().Info("GetAllBelongTo", zap.Any("调用 Service", "GetAllBelongTo 处理请求"))
+	var results []model.BelongTo
+
+	// 查询总数
+	_, size := mongodb.NewMgo(collectionBelongTo).Count()
+	//fmt.Printf(" documents name documents size %d \n", size)
+	cur := mongodb.NewMgo(collectionBelongTo).FindAll(0, size, 1)
+
+	defer cur.Close(context.TODO())
+	//if cur != nil {
+	//	fmt.Println("FindAll :", cur)
+	//	//err = errors.New("FindAll err")
+	//}
+	for cur.Next(context.TODO()) {
+		var elem model.BelongTo
+		err := cur.Decode(&elem)
+		if err != nil {
+			//err = errors.New("FindAll err")
+			log.Fatal(err)
+		}
+		results = append(results, elem)
+	}
+
+	if err := cur.Err(); err != nil {
+		//log.Fatal(err)
+		//zap.L().Info("GetAllCraft", zap.String("GetAllCraft error", fmt.Sprintf("--------->%s", zap.Error(err).String)))
+		APIResponse.Err(c, http.StatusBadRequest, 400, "数据错误", err.Error())
+	}
+	//fmt.Println(results)
+	//zap.L().Info("GetAllCraft", zap.String("GetAllCraft", fmt.Sprintf("--------->")))
+	APIResponse.Success(c, 200, "GetAllBelongTo success", results)
+
+}
+
+// AddBelongTo 新增归属
+func AddBelongTo(c *gin.Context) {
+	zap.L().Info("AddBelongTo", zap.Any("调用 Service", "AddBelongTo 处理请求"))
+	var bt entity.NewBelongTo
+	err := c.BindJSON(&bt)
+	if err != nil {
+		return
+	}
+	if bt.Name == "" {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "AddBelongTo 参数错误", bt.Name)
+	}
+
+	//查询是否存在bt
+	var existBt model.BelongTo
+	err = mongodb.NewMgo(collectionBelongTo).FindOne("name", bt.Name).Decode(&existBt)
+	//fmt.Println(err)
+	//判断是否存在记录
+	if err == nil {
+		// 已存在
+		APIResponse.Err(c, http.StatusOK, 400, "AddBelongTo 归属已存在", fmt.Sprintf("归属已存在：%s", bt.Name))
+
+	} else if err.Error() == NoDocument.Error() {
+		// 不存在，可以新增
+
+		insertOneResult := mongodb.NewMgo(collectionBelongTo).InsertOne(bt)
+		err = nil
+		//fmt.Println(insertOneResult)
+		APIResponse.Success(c, 200, "AddBelongTo success", fmt.Sprintf("%s", insertOneResult.InsertedID))
+
+	} else {
+		// 如果查询错误
+		//fmt.Println("***********")
+		//fmt.Println(err)
+		APIResponse.Err(c, http.StatusOK, 400, "AddBelongTo 发生错误", err)
+	}
+
+}
+
+// DeleteBelongToWithId 删除归属
+func DeleteBelongToWithId(c *gin.Context) {
+	zap.L().Info("DeleteBelongToWithId", zap.Any("调用 Service", "DeleteBelongToWithId 处理请求"))
+	id := c.Param("id")
+
+	//var craft entity.CraftId
+	//err := c.BindJSON(&craft)
+	//if err != nil {
+	//	APIResponse.Err(c, http.StatusBadRequest, 400, "DeleteCraftWithId 参数错误", craft.Id)
+	//	return
+	//}
+
+	objId, _ := primitive.ObjectIDFromHex(id)
+	//查询是否存在belong_to
+	var existBt model.BelongTo
+	err := mongodb.NewMgo(collectionBelongTo).FindOne("_id", objId).Decode(&existBt)
+	//fmt.Println(craftId)
+	//fmt.Println(err)
+	//判断是否存在记录
+	if err == nil {
+		// 已存在，可删除
+		deleteResult := mongodb.NewMgo(collectionBelongTo).Delete("_id", objId)
+		APIResponse.Success(c, 200, "DeleteBelongToWithId success", fmt.Sprintf("工艺已删除：%d", deleteResult))
+
+	} else {
+		// 如果查询错误
+		//fmt.Println(err)
+		APIResponse.Err(c, http.StatusOK, 400, "DeleteBelongToWithId id发生错误", err)
+	}
+
+}
+
+// UpdateBelongTo 更新归属
+func UpdateBelongTo(c *gin.Context) {
+	zap.L().Info("UpdateBelongTo", zap.Any("调用 Service", "UpdateBelongTo 处理请求"))
+	id := c.Param("id")
+	var bt entity.UpBelongTo
+	err := c.BindJSON(&bt)
+	if err != nil {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "UpdateBelongTo 参数错误", bt.Name)
+		return
+	}
+
+	if bt.Name == "" || bt.ClientId == "" {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "UpdateBelongTo 参数错误", bt.Name)
+		return
+	}
+	objId, _ := primitive.ObjectIDFromHex(id)
+
+	//查询是否存在belong_to
+	var existBt model.BelongTo
+	err = mongodb.NewMgo(collectionBelongTo).FindOne("_id", objId).Decode(&existBt)
+
+	//判断是否存在记录
+	if err == nil {
+		// 已存在,可更新
+		// redis 分布式锁
+		//res, err := redisdb.RdsClient.SetNX(clientId, existCraft.Id, time.Minute).Result()
+		if r, _ := redisdb.GetLock(existBt.Id, bt.ClientId); r {
+			//fmt.Println("***********************")
+			//fmt.Println(r)
+			// 设置成功
+			update := bson.D{
+				{
+					"$set", bson.D{
+						{"name", bt.Name},
+					}},
+			}
+			//time.Sleep(30 * time.Second)
+			updateResult := mongodb.NewMgo(collectionBelongTo).UpdateOne("_id", objId, update)
+
+			_, _ = redisdb.RunEvalDel(existBt.Id, bt.ClientId)
+			APIResponse.Success(c, 200, "UpdateBelongTo success", fmt.Sprintf("归属已更新：%s", fmt.Sprintf("Matched %d documents and updated %d documents.", updateResult.MatchedCount, updateResult.ModifiedCount)))
+
+		} else {
+			ms, _ := redisdb.Pttl(existBt.Id)
+			APIResponse.Err(c, http.StatusOK, 400, "UpdateBelongTo 发生冲突", fmt.Sprintf("%d ms之后解锁", ms))
+
+		}
+
+	} else if err.Error() == NoDocument.Error() {
+		// 不存在
+
+		APIResponse.Err(c, http.StatusOK, 400, "UpdateBelongTo 没有该记录", "")
+	} else {
+		// 如果查询错误
+		//fmt.Println(err)
+		APIResponse.Err(c, http.StatusOK, 400, "UpdateBelongTo 发生错误", err)
+	}
+
+}
+
+// *********************************************************
+// weight_status
+// *********************************************************
+
+// GetAllWeightStatus 所有重量状态
+func GetAllWeightStatus(c *gin.Context) {
+	zap.L().Info("GetAllWeightStatus", zap.Any("调用 Service", "GetAllWeightStatus 处理请求"))
+	var results []model.WeightStatus
+
+	// 查询总数
+	_, size := mongodb.NewMgo(collectionWeightStatus).Count()
+	//fmt.Printf(" documents name documents size %d \n", size)
+	cur := mongodb.NewMgo(collectionWeightStatus).FindAll(0, size, 1)
+
+	defer cur.Close(context.TODO())
+	//if cur != nil {
+	//	fmt.Println("FindAll :", cur)
+	//	//err = errors.New("FindAll err")
+	//}
+	for cur.Next(context.TODO()) {
+		var elem model.WeightStatus
+		err := cur.Decode(&elem)
+		if err != nil {
+			//err = errors.New("FindAll err")
+			log.Fatal(err)
+		}
+		results = append(results, elem)
+	}
+
+	if err := cur.Err(); err != nil {
+		//log.Fatal(err)
+		//zap.L().Info("GetAllCraft", zap.String("GetAllCraft error", fmt.Sprintf("--------->%s", zap.Error(err).String)))
+		APIResponse.Err(c, http.StatusBadRequest, 400, "数据错误", err.Error())
+	}
+	//fmt.Println(results)
+	//zap.L().Info("GetAllCraft", zap.String("GetAllCraft", fmt.Sprintf("--------->")))
+	APIResponse.Success(c, 200, "GetAllWeightStatus success", results)
+
+}
+
+// AddWeightStatus 新增重量状态
+func AddWeightStatus(c *gin.Context) {
+	zap.L().Info("AddWeightStatus", zap.Any("调用 Service", "AddWeightStatus 处理请求"))
+	var ws entity.NewWeightStatus
+	err := c.BindJSON(&ws)
+	if err != nil {
+		return
+	}
+	if ws.Name == "" {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "AddWeightStatus 参数错误", ws.Name)
+	}
+
+	//查询是否存在ws
+	var existWs model.WeightStatus
+	err = mongodb.NewMgo(collectionWeightStatus).FindOne("name", ws.Name).Decode(&existWs)
+	//fmt.Println(err)
+	//判断是否存在记录
+	if err == nil {
+		// 已存在
+		APIResponse.Err(c, http.StatusOK, 400, "AddWeightStatus 重量状态已存在", fmt.Sprintf("重量状态已存在：%s", ws.Name))
+
+	} else if err.Error() == NoDocument.Error() {
+		// 不存在，可以新增
+
+		insertOneResult := mongodb.NewMgo(collectionWeightStatus).InsertOne(ws)
+		err = nil
+		//fmt.Println(insertOneResult)
+		APIResponse.Success(c, 200, "AddWeightStatus success", fmt.Sprintf("%s", insertOneResult.InsertedID))
+
+	} else {
+		// 如果查询错误
+		//fmt.Println("***********")
+		//fmt.Println(err)
+		APIResponse.Err(c, http.StatusOK, 400, "AddWeightStatus 发生错误", err)
+	}
+
+}
+
+// DeleteWeightStatusWithId 删除重量状态
+func DeleteWeightStatusWithId(c *gin.Context) {
+	zap.L().Info("DeleteWeightStatusWithId", zap.Any("调用 Service", "DeleteWeightStatusWithId 处理请求"))
+	id := c.Param("id")
+
+	//var craft entity.CraftId
+	//err := c.BindJSON(&craft)
+	//if err != nil {
+	//	APIResponse.Err(c, http.StatusBadRequest, 400, "DeleteCraftWithId 参数错误", craft.Id)
+	//	return
+	//}
+
+	objId, _ := primitive.ObjectIDFromHex(id)
+	//查询是否存在weight_status
+	var existWs model.WeightStatus
+	err := mongodb.NewMgo(collectionWeightStatus).FindOne("_id", objId).Decode(&existWs)
+	//fmt.Println(craftId)
+	//fmt.Println(err)
+	//判断是否存在记录
+	if err == nil {
+		// 已存在，可删除
+		deleteResult := mongodb.NewMgo(collectionWeightStatus).Delete("_id", objId)
+		APIResponse.Success(c, 200, "DeleteWeightStatusWithId success", fmt.Sprintf("重量状态已删除：%d", deleteResult))
+
+	} else {
+		// 如果查询错误
+		//fmt.Println(err)
+		APIResponse.Err(c, http.StatusOK, 400, "DeleteWeightStatusWithId id发生错误", err)
+	}
+
+}
+
+// UpdateWeightStatus 更新重量状态
+func UpdateWeightStatus(c *gin.Context) {
+	zap.L().Info("UpdateWeightStatus", zap.Any("调用 Service", "UpdateWeightStatus 处理请求"))
+	id := c.Param("id")
+	var ws entity.UpWeightStatus
+	err := c.BindJSON(&ws)
+	if err != nil {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "UpdateWeightStatus 参数错误", ws.Name)
+		return
+	}
+
+	if ws.Name == "" || ws.ClientId == "" {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "UpdateWeightStatus 参数错误", ws.Name)
+		return
+	}
+	objId, _ := primitive.ObjectIDFromHex(id)
+
+	//查询是否存在weight_status
+	var existWs model.WeightStatus
+	err = mongodb.NewMgo(collectionWeightStatus).FindOne("_id", objId).Decode(&existWs)
+
+	//判断是否存在记录
+	if err == nil {
+		// 已存在,可更新
+		// redis 分布式锁
+		//res, err := redisdb.RdsClient.SetNX(clientId, existCraft.Id, time.Minute).Result()
+		if r, _ := redisdb.GetLock(existWs.Id, ws.ClientId); r {
+			//fmt.Println("***********************")
+			//fmt.Println(r)
+			// 设置成功
+			update := bson.D{
+				{
+					"$set", bson.D{
+						{"name", ws.Name},
+					}},
+			}
+			//time.Sleep(30 * time.Second)
+			updateResult := mongodb.NewMgo(collectionWeightStatus).UpdateOne("_id", objId, update)
+
+			_, _ = redisdb.RunEvalDel(existWs.Id, ws.ClientId)
+			APIResponse.Success(c, 200, "UpdateWeightStatus success", fmt.Sprintf("重量状态已更新：%s", fmt.Sprintf("Matched %d documents and updated %d documents.", updateResult.MatchedCount, updateResult.ModifiedCount)))
+
+		} else {
+			ms, _ := redisdb.Pttl(existWs.Id)
+			APIResponse.Err(c, http.StatusOK, 400, "UpdateWeightStatus 发生冲突", fmt.Sprintf("%d ms之后解锁", ms))
+
+		}
+
+	} else if err.Error() == NoDocument.Error() {
+		// 不存在
+
+		APIResponse.Err(c, http.StatusOK, 400, "UpdateWeightStatus 没有该记录", "")
+	} else {
+		// 如果查询错误
+		//fmt.Println(err)
+		APIResponse.Err(c, http.StatusOK, 400, "UpdateWeightStatus 发生错误", err)
 	}
 
 }
