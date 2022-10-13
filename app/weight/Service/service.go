@@ -867,7 +867,7 @@ func DeleteBelongToWithId(c *gin.Context) {
 	if err == nil {
 		// 已存在，可删除
 		deleteResult := mongodb.NewMgo(collectionBelongTo).Delete("_id", objId)
-		APIResponse.Success(c, 200, "DeleteBelongToWithId success", fmt.Sprintf("工艺已删除：%d", deleteResult))
+		APIResponse.Success(c, 200, "DeleteBelongToWithId success", fmt.Sprintf("归属已删除：%d", deleteResult))
 
 	} else {
 		// 如果查询错误
