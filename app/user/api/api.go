@@ -56,13 +56,15 @@ func Api(R *gin.Engine) {
 
 		//user.GET("/permission", service.GetUserAuth)
 		// 添加一条Policy策略
-		user.POST("acs", service.AddPolicy)
+		//user.POST("acs", service.AddPolicy)
 		// 删除一条Policy策略
-		user.DELETE("acs/:id", service.DeletePolicy)
+		//user.DELETE("acs/:id", service.DeletePolicy)
+		user.POST("/user_role", Controller.AddUserRole)
 	}
 
 	auth := R.Group("/auth")
 	//auth.Use(middleware.JWTAuth(), middleware.IsAdminAuth())
+	auth.Use(middleware.RateLimitMiddleware(time.Second, 100, 100), middleware.GinLogger(), middleware.GinRecovery(true), middleware.JWTAuth(), middleware.IsAdminAuth())
 	{
 		auth.POST("/role", Controller.AddRole)
 		auth.GET("/roles", Controller.AllRoles)
@@ -74,11 +76,11 @@ func Api(R *gin.Engine) {
 		auth.POST("/role_permission", Controller.AddRolePermission)
 	}
 
-	test := R.Group("/test")
-	test.Use(middleware.JWTAuth(), middleware.IsAdminAuth())
-	{
-		test.GET("/hello", service.HelloHandler)
-	}
+	//test := R.Group("/test")
+	//test.Use(middleware.JWTAuth(), middleware.IsAdminAuth())
+	//{
+	//	test.GET("/hello", service.HelloHandler)
+	//}
 
 	R.NoRoute(authMiddleware.MiddlewareFunc(), func(c *gin.Context) {
 		claims := jwt.ExtractClaims(c)

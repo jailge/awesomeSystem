@@ -139,3 +139,21 @@ func GetPermissionsWithRoleId(c *gin.Context) {
 	}
 	APIResponse.Success(c, http.StatusOK, fmt.Sprintf("role %d all permissions", rId), rp)
 }
+
+func AddUserRole(c *gin.Context) {
+	zap.L().Info("AddUserRole", zap.Any("调用 Service", "AddUserRole 处理请求"))
+	//id := c.Param("id")
+	//uId, _ := strconv.ParseInt(id, 10, 64)
+	newUserRole := entity.NewUserRole{}
+	err := c.BindJSON(&newUserRole)
+	if err != nil {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "AddUserRole 参数错误", newUserRole)
+		return
+	}
+	userRole, ok := dao.NewUserRole(newUserRole.UserId, newUserRole.RoleId)
+	if !ok {
+		APIResponse.Err(c, http.StatusBadRequest, 400, "add user role 错误", userRole)
+		return
+	}
+	APIResponse.Success(c, http.StatusOK, "add user role success", userRole)
+}

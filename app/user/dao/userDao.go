@@ -129,3 +129,12 @@ func FindUserIdWithName(userName string) (*model.User, bool) {
 	}
 	return &user, true
 }
+
+func NewUserRole(userId, roleId int64) (*model.UserRole, bool) {
+	ur := model.UserRole{UserId: userId, RoleId: roleId}
+	res := mysqldb.Mysql.Table("user_role").Select("user_id", "role_id").Create(&ur)
+	if res.RowsAffected < 1 {
+		return &ur, false
+	}
+	return &ur, true
+}
