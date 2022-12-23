@@ -79,5 +79,8 @@ func Api(R *gin.Engine) {
 		// 删除一条Policy策略
 		weight.DELETE("acs/:id", Service.DeletePolicy)
 
+		weight.GET("/weigh_record/:bpm_id", Service.GetWeighRecordWithBPMTaskId)
+		weight.DELETE("/weigh_record/:bpm_id", Service.DeleteWeighRecordWithBPMTaskId)
+
 	}
 }

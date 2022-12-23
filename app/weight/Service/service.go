@@ -19,6 +19,7 @@ import (
 	"go.uber.org/zap"
 	"log"
 	"net/http"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -1425,4 +1426,57 @@ func ExistCalRecord(c *gin.Context) {
 	}
 	fmt.Println(http_body)
 	fmt.Println(param_info)
+}
+
+// *********************************************************
+// weigh_record 记录RUD
+// *********************************************************
+
+// GetWeighRecordWithBPMTaskId bpm task id 查询记录
+func GetWeighRecordWithBPMTaskId(c *gin.Context) {
+	zap.L().Info("GetWeighRecordWithBPMTaskId", zap.Any("调用 Service", "GetWeighRecordWithBPMTaskId 处理请求"))
+	id := c.Param("bpm_id")
+	//fmt.Println(id)
+	bpmId, e := strconv.Atoi(id)
+	if e != nil {
+		APIResponse.Err(c, http.StatusOK, 400, "参数错误", fmt.Sprintf("bpm_task_id %s 错误", id))
+		return
+	}
+	//查询是否存在
+	m := mongodb.NewMgo(collectionWeighRecord)
+	var exist model.WeighMaterialRecord
+	err := m.FindOne("bpm_task_id", bpmId).Decode(&exist)
+	if err != nil {
+		// 不存在
+		APIResponse.Err(c, http.StatusOK, 400, "称重记录不存在", fmt.Sprintf("bpm_task_id %s 的称重记录不存在", id))
+		return
+	}
+	//fmt.Println(exist)
+	APIResponse.Success(c, http.StatusOK, "GetWeighRecordWithBPMTaskId 称重记录", exist)
+
+}
+
+// DeleteWeighRecordWithBPMTaskId bpm task id 删除记录
+func DeleteWeighRecordWithBPMTaskId(c *gin.Context) {
+	zap.L().Info("DeleteWeighRecordWithBPMTaskId", zap.Any("调用 Service", "DeleteWeighRecordWithBPMTaskId 处理请求"))
+	id := c.Param("bpm_id")
+	//fmt.Println(id)
+	bpmId, e := strconv.Atoi(id)
+	if e != nil {
+		APIResponse.Err(c, http.StatusOK, 400, "参数错误", fmt.Sprintf("bpm_task_id %s 错误", id))
+		return
+	}
+	//查询是否存在
+	m := mongodb.NewMgo(collectionWeighRecord)
+	var exist model.WeighMaterialRecord
+	err := m.FindOne("bpm_task_id", bpmId).Decode(&exist)
+	if err == nil {
+		// 存在，可删除
+		objId, _ := primitive.ObjectIDFromHex(exist.Id)
+		deleteResult := m.Delete("_id", objId)
+		APIResponse.Success(c, http.StatusOK, "DeleteWeighRecordWithBPMTaskId success", fmt.Sprintf("bpm_task_id：%s 已删除：%d", id, deleteResult))
+	} else {
+		APIResponse.Err(c, http.StatusOK, 400, "DeleteWeighRecordWithBPMTaskId id发生错误", err)
+	}
+
 }
